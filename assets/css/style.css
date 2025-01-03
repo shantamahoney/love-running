@@ -1,5 +1,6 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200..700&display=swap');
+
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
@@ -22,6 +23,10 @@ body {
 /* Header */
 header {
     background-color: lightcoral;
+
+}
+h1 {
+     font-family:Oswald, san-serif;
 }
 
 /* Main content */

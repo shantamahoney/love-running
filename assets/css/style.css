@@ -1,9 +1,12 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+} 
 
 /* General styles */
 body {
@@ -12,6 +15,7 @@ body {
     flex-direction: column;
     /* Generic project styles */
     color: #3a3a3a;
+    font-family:'lato', sans-serif;
 }
 
 
@@ -31,3 +35,5 @@ main {
 footer {
     background-color: orange;
 }
+
+  

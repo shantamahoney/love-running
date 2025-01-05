@@ -238,36 +238,46 @@ main {
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-    #menu a:hover {
-        border-bottom: 1px solid #3a3a3a;
-    }
-}
-
-@media screen and (min-width: 1200px) {    
-    /* Reasons section */
+@media screen and (min-width: 1200px) {
+    /* Benefits section container */
     #benefits {
         display: flex;
         flex-direction: row;
+        align-items: center; /* Vertically align all items */
+        justify-content: space-between; /* Evenly distribute space */
     }
 
-    #benefits > div {
-        flex: 1;
-    }
-
+    /* Center the circle image */
     #benefits-image {
-        order: 0
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 auto; /* Prevent shrinking */
+        order: 1; /* Place the image in the middle */
+    }
+
+    #circle-cover-bg {
+        margin: 0 auto;
+        height: 300px; /* Adjust height */
+        width: 300px; /* Adjust width */
+        border-radius: 50%; /* Ensure it's a circle */
+    }
+
+    /* Adjust order for the other sections */
+    #benefits-physical {
+        order: 0;
+        flex: 1; /* Allow to stretch */
     }
 
     #benefits-mental {
-        order: 1;
+        order: 2;
+        flex: 1; /* Allow to stretch */
     }
 
+    /* Ensure even spacing for benefits-physical and benefits-mental */
+    #benefits-physical > div, 
     #benefits-mental > div {
-        align-self: flex-start;
-    }
-
-    #benefits-physical > div {
-        align-self: flex-end;
+        max-width: 75%;
+        margin: 0 auto;
     }
 }
